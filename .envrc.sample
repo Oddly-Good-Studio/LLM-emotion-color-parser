@@ -1,0 +1,3 @@
+eval $(pdm venv activate)
+
+export CO_API_KEY=<Create a Cohere API key here: https://dashboard.cohere.com/api-keys>
