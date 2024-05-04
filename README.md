@@ -61,11 +61,11 @@ will produce a JSON file `emotions.json` with the following structure:
 
 ## Set up
 
+1. Install [pdm](https://pdm-project.org/en/latest/#__tabbed_1_2)
+--> This is a tool like npm for managing dependencies since default dependency management in Python is terrible
+1. Run `pdm install` to install dependencies needed for this project to run
 1. Copy `.envrc.sample` to `.envrc` and fill out the value for the Cohere API key (you'll have to make an account but its free to use their API)
 1. Install [`direnv`](https://direnv.net/docs/installation.html).
 --> This is a tool that helps manage envrionemnt variables set per project.
 1. Run `direnv allow` in your shell to set the necessary env variables in your environment
-1. Install [pdm](https://pdm-project.org/en/latest/#__tabbed_1_2)
---> This is a tool like npm for managing dependencies since default dependency management in Python is terrible
-1. Run `pdm install` to install dependencies needed for this project to run
 1. Run the python script using the command above
