@@ -1,6 +1,6 @@
 # LLM Emotion & Color Parser
 
-### A proof of concept for Craftwork Studios "Ancient Futures" project
+### A proof of concept for Craftwork Studios "Ancient Futures" project that uses LLM magic to parse emotion and colors from someone's confessed "secret"
 
 Running this script with a sentence / secret:
 
