@@ -59,6 +59,14 @@ will produce a JSON file `emotions.json` with the following structure:
 }
 ```
 
+## Running with Docker
+
+I've pushed up a manually built Docker image to Dockerhub (currently built with `./docker-build-and-publish.sh`). To run using Docker:
+
+```
+docker run -e COHERE_API_KEY=<get API key here: https://dashboard.cohere.com/api-keys> switzerswish/ancient-futures-color-llm-app pdm run python src/claude_instructor_test/__init__.py "my super secret string"
+```
+
 ## Set up
 
 1. Install [pdm](https://pdm-project.org/en/latest/#__tabbed_1_2)
