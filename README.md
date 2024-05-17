@@ -4,9 +4,9 @@
 
 Running this script with a sentence / secret:
 
-`python src/claude_instructor_test/__init__.py "I believe I can communicate with plants and I have a secret garden where I talk to rare species to help them grow."`
+`python src/claude_instructor_test/__init__.py --secret "I like dancing in the dark" --output-file ~/workspace/emotions.json`
 
-will produce a JSON file `emotions.json` with the following structure:
+will produce a JSON file at `~/workspace/emotions.json` with the following structure:
 
 ```.json
 {
@@ -57,14 +57,6 @@ will produce a JSON file `emotions.json` with the following structure:
     },
     "original_sentence": "I believe I can communicate with plants and I have a secret garden where I talk to rare species to help them grow."
 }
-```
-
-## Running with Docker
-
-I've pushed up a manually built Docker image to Dockerhub (currently built with `./docker-build-and-publish.sh`). To run using Docker:
-
-```
-docker run -e COHERE_API_KEY=<get API key here: https://dashboard.cohere.com/api-keys> switzerswish/ancient-futures-color-llm-app pdm run python src/claude_instructor_test/__init__.py "my super secret string"
 ```
 
 ## Set up
