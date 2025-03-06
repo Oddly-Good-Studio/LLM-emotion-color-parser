@@ -29,7 +29,7 @@ class Response(BaseModel):
 client = instructor.from_cohere(cohere.Client())
 
 task = f"""\
-Given the following sentence, create a Response object that contains an Emotion object with an associated list of 2 Color objects to describe the emotion.
+Given the following sentence, create a Response object that contains an Emotion object with an associated list of 2 Color objects to describe the emotion. Do not use white or any colors close to white.
 
 The Emotion name should be a real emotion, and only one word. The RGB values will be used to animate LEDs so there is no black or gray light.
 
